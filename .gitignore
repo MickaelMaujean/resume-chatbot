@@ -1,0 +1,20 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environment (uv creates this)
+.venv/
+
+# uv
+uv.lock
+
+# OS
+.DS_Store
+Thumbs.db

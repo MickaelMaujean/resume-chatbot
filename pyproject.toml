@@ -1,0 +1,27 @@
+[project]
+name = "resume-chatbot"
+version = "0.1.0"
+description = "AI chatbot backend for a personal resume website"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi==0.115.5",
+    "uvicorn[standard]==0.32.1",
+    "google-generativeai==0.8.3",
+    "python-dotenv==1.0.1",
+    "slowapi==0.1.9",
+    "pydantic==2.10.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx",        # for testing FastAPI with TestClient
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "httpx",
+    "pytest",
+    "pytest-asyncio",
+]
