@@ -47,8 +47,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("FRONTEND_URL"), "http://localhost:3000", "https://id-preview--dd840514-e8b0-40d1-bd96-b988ef7442ff.lovable.app",
-"https://mickaelmaujean.lovable.app"],
+    allow_origins=["https://mickaelmaujean.lovable.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
