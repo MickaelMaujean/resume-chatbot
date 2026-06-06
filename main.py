@@ -97,7 +97,7 @@ model = genai.GenerativeModel(
 # ── Routes ─────────────────────────────────────────────────────────────────────
 @app.get("/")
 async def root():
-    return {"message" : "Resume Chatbot API is running. Use POST /chat to interact"}
+    return {"message" : "Resume assistant is ready for you to use. Use POST /chat to interact"}
 
 @app.get("/health")
 async def health():
